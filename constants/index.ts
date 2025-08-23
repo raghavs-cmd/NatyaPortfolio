@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
         id: "proj-01",
         title: "Anti-Aging Skin Oil Landing Page Redesign",
         tags: ["UI Design", "Figma", "UX Research", "UI/UX"],
-        cover: "/Anti-aging.png",
+        cover: "public/Anti-aging.png",
         detail: {
             problem: "The existing landing page for the skin oil product had a low conversion rate and a high bounce rate. User feedback indicated the design was outdated and the information architecture was confusing.",
             outcome: "The redesigned landing page saw a 40% increase in user engagement and a 25% uplift in conversions. The new design is modern, clean, and effectively communicates the product's value proposition.",
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
         id: "proj-02",
         title: "Smart Lighting & AC System App",
         tags: ["Prototyping", "Figma", "Design Systems", "UI/UX"],
-        cover: "/smart.png",
+        cover: "public/smart.png",
         detail: {
             problem: "Users of a smart home system found the mobile app for controlling lighting and air conditioning to be unintuitive and slow. Key features were buried in menus, leading to a frustrating user experience.",
             outcome: "A complete app redesign focusing on a task-based workflow. The new dashboard provides one-tap access to common controls, and user satisfaction scores increased by 60% after launch.",
@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
         id: "proj-03",
         title: "Amazon Landing Page Redesign",
         tags: ["Web", "E-commerce", "UI Design", "UX Analysis", "UI/UX"],
-        cover: "/amazon.png",
+        cover: "public/amazon.png",
         detail: {
             problem: "This was a conceptual project to reimagine the Amazon homepage. The goal was to reduce visual clutter, improve product discovery, and create a more personalized shopping experience.",
             outcome: "The proposed redesign features a cleaner, card-based layout with dynamic content tailored to user behavior. A streamlined navigation and powerful search filter system were key highlights.",
