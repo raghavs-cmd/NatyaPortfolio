@@ -33,10 +33,10 @@ const ProcessTimeline: React.FC<ProcessTimelineProps> = ({ process }) => {
             {process.map((item, index) => (
                 <motion.div key={item.step} className="flex-1 text-center" variants={itemVariants}>
                     <div className="flex items-center justify-center mb-2">
-                        <div className="w-8 h-8 rounded-full bg-accent-light dark:bg-accent-dark text-secondary dark:text-primary flex items-center justify-center font-bold">{index + 1}</div>
+                        <div className="w-8 h-8 rounded-full bg-accent text-primary flex items-center justify-center font-bold">{index + 1}</div>
                     </div>
                     <h4 className="font-bold mb-1">{item.step}</h4>
-                    <p className="text-sm text-primary/70 dark:text-secondary/70">{item.description}</p>
+                    <p className="text-sm text-secondary/70">{item.description}</p>
                 </motion.div>
             ))}
         </motion.div>

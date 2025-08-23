@@ -1,4 +1,4 @@
-
+import '@react-three/fiber';
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';

@@ -25,14 +25,14 @@ const About: React.FC = () => {
                         transition={{ type: 'spring', stiffness: 300 }}
                     >
                         {/* 
-                          STEP-BY-STEP INSTRUCTIONS TO ADD YOUR PHOTO:
-                          1. Create a folder named 'public' in the root directory of your project (the same level as 'index.html').
-                          2. Place your desired profile picture inside this new 'public' folder. For example, let's say you name it 'natya.jpeg'.
-                          3. In the line below, make sure the `src` attribute is "/natya.jpeg" (with a leading slash).
-                          4. That's it! The path tells the browser to look for 'natya.jpeg' in the public folder.
+                          INSTRUCTIONS TO ADD YOUR PHOTO:
+                          1. Create a folder named 'assets' in the root directory of your project (the same level as 'index.html').
+                          2. Place your profile picture inside this 'assets' folder (e.g., 'natya.jpeg').
+                          3. The `src` attribute below is set to "/assets/natya.jpeg". The leading slash means the browser will look for the 'assets' folder from the root of the site.
+                          4. If your image has a different name, just update the path below.
                         */}
                         <img
-                            src="/natya.jpeg"
+                            src="/assets/natya.jpeg"
                             alt="Natya Sowparnika"
                             className="w-full h-full rounded-full object-cover border-4 border-accent/30 shadow-lg"
                         />
