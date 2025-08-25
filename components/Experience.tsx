@@ -1,9 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as motionUntyped } from 'framer-motion';
 import { EXPERIENCE, EDUCATION } from '../constants';
 import type { ExperienceItem } from '../types';
 
-const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const motion = motionUntyped as any;
+
+const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
         {children}
     </h2>
@@ -12,7 +14,7 @@ const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 const BriefcaseIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M12 12h.01"/></svg>;
 const GraduationCapIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0 0 1.838l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>;
 
-const TimelineItem: React.FC<{ item: ExperienceItem; isLast: boolean; icon: React.ReactNode }> = ({ item, isLast, icon }) => {
+const TimelineItem = ({ item, isLast, icon }: { item: ExperienceItem; isLast: boolean; icon: React.ReactNode }) => {
     return (
         <motion.div 
             className="relative pl-10"
@@ -34,7 +36,7 @@ const TimelineItem: React.FC<{ item: ExperienceItem; isLast: boolean; icon: Reac
     );
 };
 
-const Experience: React.FC = () => {
+const Experience = () => {
     return (
         <section id="experience">
             <SectionTitle>Experience & Education</SectionTitle>

@@ -37,49 +37,16 @@ export const AdobeXdIcon = () => (
     </svg>
 );
 
-export const Html5Icon = () => (
+export const CanvaIcon = () => (
     <svg {...iconProps} viewBox="0 0 24 24">
-        <path d="M2 3l1.6 18L12 23l8.4-2L22 3H2z" />
-        <path d="M12 7v12l-5-1.5V7h5z" />
+        <path d="M6.34 17.66a9 9 0 1 0 11.32-11.32" />
+        <circle cx="8.5" cy="8.5" r="2" />
     </svg>
 );
 
-export const Css3Icon = () => (
+export const FramerIcon = () => (
     <svg {...iconProps} viewBox="0 0 24 24">
-        <path d="M2 3l1.6 18L12 23l8.4-2L22 3H2z" />
-        <path d="M12 7v12l5-1.5V7h-5z" />
-    </svg>
-);
-
-export const JavascriptIcon = () => (
-    <svg {...iconProps} viewBox="0 0 24 24">
-        <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-        <path d="M12 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-        <path d="M18 6a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-        <path d="M6 18a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-    </svg>
-);
-
-export const CIcon = () => (
-    <svg {...iconProps} viewBox="0 0 24 24">
-        <path d="M18.37 7.23A8 8 0 1 0 7.23 18.37" />
-    </svg>
-);
-
-export const PythonIcon = () => (
-    <svg {...iconProps} viewBox="0 0 24 24">
-        <path d="M13 11V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2" />
-        <path d="M11 13v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2" />
-        <path d="M7 11h4a2 2 0 0 0 2-2V7" />
-        <path d="M17 13h-4a2 2 0 0 0-2 2v2" />
-    </svg>
-);
-
-export const SqlIcon = () => (
-    <svg {...iconProps} viewBox="0 0 24 24">
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+        <path d="M6 12h12V6H6v6zm0 6h6v-6H6v6z" />
     </svg>
 );
 

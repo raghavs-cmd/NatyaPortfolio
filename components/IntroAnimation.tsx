@@ -1,14 +1,15 @@
-import '@react-three/fiber';
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion as motionUntyped, AnimatePresence } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { Center, Text3D } from '@react-three/drei';
+
+const motion = motionUntyped as any;
 
 interface IntroAnimationProps {
     isVisible: boolean;
 }
 
-const IntroAnimation: React.FC<IntroAnimationProps> = ({ isVisible }) => {
+const IntroAnimation = ({ isVisible }: IntroAnimationProps) => {
     return (
         <AnimatePresence>
             {isVisible && (

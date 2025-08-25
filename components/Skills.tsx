@@ -1,14 +1,16 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as motionUntyped } from 'framer-motion';
 import { SKILLS } from '../constants';
 
-const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const motion = motionUntyped as any;
+
+const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
         {children}
     </h2>
 );
 
-const Skills: React.FC = () => {
+const Skills = () => {
     const containerVariants = {
         hidden: {},
         show: {

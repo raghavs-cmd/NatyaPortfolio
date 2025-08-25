@@ -1,13 +1,15 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as motionUntyped } from 'framer-motion';
 
-const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const motion = motionUntyped as any;
+
+const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
         {children}
     </h2>
 );
 
-const About: React.FC = () => {
+const About = () => {
     return (
         <section id="about">
             <motion.div
@@ -32,7 +34,7 @@ const About: React.FC = () => {
                           4. If your image has a different name, just update the path below.
                         */}
                         <img
-                            src="public/natya.jpeg"
+                            src="/assets/natya.jpeg"
                             alt="Natya Sowparnika"
                             className="w-full h-full rounded-full object-cover border-4 border-accent/30 shadow-lg"
                         />

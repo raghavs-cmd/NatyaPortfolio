@@ -1,6 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as motionUntyped } from 'framer-motion';
 import type { ProcessStep } from '../types';
+
+const motion = motionUntyped as any;
 
 interface ProcessTimelineProps {
     process: ProcessStep[];
@@ -22,7 +24,7 @@ const itemVariants = {
     show: { y: 0, opacity: 1 },
 };
 
-const ProcessTimeline: React.FC<ProcessTimelineProps> = ({ process }) => {
+const ProcessTimeline = ({ process }: ProcessTimelineProps) => {
     return (
         <motion.div 
             className="flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0 md:space-x-4"

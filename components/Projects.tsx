@@ -1,21 +1,22 @@
-
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as motionUntyped } from 'framer-motion';
 import { PROJECTS } from '../constants';
 import ProjectCard from './ProjectCard';
 import type { Project } from '../types';
+
+const motion = motionUntyped as any;
 
 interface ProjectsProps {
     onProjectClick: (project: Project) => void;
 }
 
-const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
         {children}
     </h2>
 );
 
-const Projects: React.FC<ProjectsProps> = ({ onProjectClick }) => {
+const Projects = ({ onProjectClick }: ProjectsProps) => {
     const containerVariants = {
         hidden: { opacity: 0 },
         show: {

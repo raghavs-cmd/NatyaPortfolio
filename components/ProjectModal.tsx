@@ -1,7 +1,9 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion as motionUntyped, AnimatePresence } from 'framer-motion';
 import ProcessTimeline from './ProcessTimeline';
 import type { Project } from '../types';
+
+const motion = motionUntyped as any;
 
 interface ProjectModalProps {
     project: Project | null;
@@ -17,7 +19,7 @@ const ExternalLinkIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
 );
 
-const AntiAgingPrototype: React.FC = () => (
+const AntiAgingPrototype = () => (
     <div className="w-full aspect-video bg-white rounded-lg shadow-xl p-4 flex flex-col gap-3 border border-slate-200 text-slate-900">
         {/* Header */}
         <div className="flex justify-between items-center px-2">
@@ -43,7 +45,7 @@ const AntiAgingPrototype: React.FC = () => (
 );
 
 
-const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
+const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
     if (!project) return null;
 
     return (

@@ -14,7 +14,7 @@ import { FloatingShapes } from './components/canvas/FloatingShapes';
 import { Canvas } from '@react-three/fiber';
 import type { Project } from './types';
 
-const App: React.FC = () => {
+const App = () => {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
     const [showIntro, setShowIntro] = useState(true);
 

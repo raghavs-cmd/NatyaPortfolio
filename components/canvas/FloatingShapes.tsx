@@ -1,11 +1,10 @@
-import '@react-three/fiber';
 import React, { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { inSphere } from 'maath/random';
 import { Points, PointMaterial, Icosahedron, Dodecahedron } from '@react-three/drei';
 import { Group } from 'three';
 
-const Shape: React.FC<{ position: [number, number, number] }> = ({ position }) => {
+const Shape = ({ position }: { position: [number, number, number] }) => {
     const ref = useRef<Group>(null!);
     const [hovered, setHovered] = useState(false);
     const [geometryIndex] = useState(Math.floor(Math.random() * 2));
@@ -35,7 +34,7 @@ const Shape: React.FC<{ position: [number, number, number] }> = ({ position }) =
     );
 };
 
-const StarsBackground: React.FC = () => {
+const StarsBackground = () => {
     const ref = useRef<any>(null);
     const [sphere] = useState(() => inSphere(new Float32Array(5001), { radius: 6 }));
 
@@ -61,7 +60,7 @@ const StarsBackground: React.FC = () => {
     );
 };
 
-export const FloatingShapes: React.FC = () => {
+export const FloatingShapes = () => {
     const groupRef = useRef<Group>(null!);
     // Reduced shape count and increased radius to spread them out
     const [sphere] = useState(() => inSphere(new Float32Array(15 * 3), { radius: 5.5 }));

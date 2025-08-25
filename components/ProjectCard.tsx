@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion as motionUntyped, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import type { Project } from '../types';
+
+const motion = motionUntyped as any;
 
 interface ProjectCardProps {
     project: Project;
@@ -12,7 +14,7 @@ const itemVariants = {
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
     const ref = useRef<HTMLDivElement>(null);
 
     const x = useMotionValue(0);
@@ -48,7 +50,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
             onClick={onClick}
             variants={itemVariants}
             className="group rounded-xl overflow-hidden cursor-pointer bg-glass backdrop-blur-md border border-white/5 shadow-lg"
-            style={{ transformStyle: 'preserve-3d', rotateX, rotateY }}
+            style={{ transformStyle: 'preserve-3d' }}
+            rotateX={rotateX}
+            rotateY={rotateY}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             data-hoverable
         >

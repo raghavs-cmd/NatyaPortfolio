@@ -1,14 +1,16 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as motionUntyped } from 'framer-motion';
 import { PERSONAL_DETAILS } from '../constants';
 
-const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const motion = motionUntyped as any;
+
+const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
         {children}
     </h2>
 );
 
-const Contact: React.FC = () => {
+const Contact = () => {
     return (
         <section id="contact" className="relative">
             <div className="absolute inset-0 z-0 overflow-hidden">

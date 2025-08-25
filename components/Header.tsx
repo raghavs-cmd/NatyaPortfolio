@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion as motionUntyped, useAnimation } from 'framer-motion';
 
-const Header: React.FC = () => {
+const motion = motionUntyped as any;
+
+const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const controls = useAnimation();
 

@@ -1,9 +1,8 @@
 import React from 'react';
 import type { Project, SkillCategory, ExperienceItem } from '../types';
 import {
-    FigmaIcon, FlutterFlowIcon, AdobeXdIcon, Html5Icon, Css3Icon,
-    JavascriptIcon, CIcon, PythonIcon, SqlIcon, UserResearchIcon,
-    DesignSystemsIcon, ProductStrategyIcon
+    FigmaIcon, FlutterFlowIcon, AdobeXdIcon, CanvaIcon, UserResearchIcon,
+    DesignSystemsIcon, ProductStrategyIcon, FramerIcon
 } from '../components/SkillIcons';
 
 
@@ -22,7 +21,7 @@ export const PROJECTS: Project[] = [
         id: "proj-01",
         title: "Anti-Aging Skin Oil Landing Page Redesign",
         tags: ["UI Design", "Figma", "UX Research", "UI/UX"],
-        cover: "public/Anti-aging.png",
+        cover: "/assets/Anti-aging.png",
         detail: {
             problem: "The existing landing page for the skin oil product had a low conversion rate and a high bounce rate. User feedback indicated the design was outdated and the information architecture was confusing.",
             outcome: "The redesigned landing page saw a 40% increase in user engagement and a 25% uplift in conversions. The new design is modern, clean, and effectively communicates the product's value proposition.",
@@ -41,7 +40,7 @@ export const PROJECTS: Project[] = [
         id: "proj-02",
         title: "Smart Lighting & AC System App",
         tags: ["Prototyping", "Figma", "Design Systems", "UI/UX"],
-        cover: "public/smart.png",
+        cover: "/assets/smart.png",
         detail: {
             problem: "Users of a smart home system found the mobile app for controlling lighting and air conditioning to be unintuitive and slow. Key features were buried in menus, leading to a frustrating user experience.",
             outcome: "A complete app redesign focusing on a task-based workflow. The new dashboard provides one-tap access to common controls, and user satisfaction scores increased by 60% after launch.",
@@ -60,7 +59,7 @@ export const PROJECTS: Project[] = [
         id: "proj-03",
         title: "Amazon Landing Page Redesign",
         tags: ["Web", "E-commerce", "UI Design", "UX Analysis", "UI/UX"],
-        cover: "public/amazon.png",
+        cover: "/assets/amazon.png",
         detail: {
             problem: "This was a conceptual project to reimagine the Amazon homepage. The goal was to reduce visual clutter, improve product discovery, and create a more personalized shopping experience.",
             outcome: "The proposed redesign features a cleaner, card-based layout with dynamic content tailored to user behavior. A streamlined navigation and powerful search filter system were key highlights.",
@@ -103,22 +102,8 @@ export const SKILLS: SkillCategory[] = [
             { name: 'Figma', icon: React.createElement(FigmaIcon) },
             { name: 'Flutter Flow', icon: React.createElement(FlutterFlowIcon) },
             { name: 'Adobe XD', icon: React.createElement(AdobeXdIcon) },
-        ],
-    },
-    {
-        title: 'Programming Languages',
-        skills: [
-            { name: 'HTML5', icon: React.createElement(Html5Icon) },
-            { name: 'CSS3', icon: React.createElement(Css3Icon) },
-            { name: 'JavaScript', icon: React.createElement(JavascriptIcon) },
-            { name: 'C', icon: React.createElement(CIcon) },
-            { name: 'Python', icon: React.createElement(PythonIcon) },
-        ],
-    },
-    {
-        title: 'Databases',
-        skills: [
-            { name: 'SQL', icon: React.createElement(SqlIcon) },
+            { name: 'Canva', icon: React.createElement(CanvaIcon) },
+            { name: 'Framer', icon: React.createElement(FramerIcon) },
         ],
     },
     {
