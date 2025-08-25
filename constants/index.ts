@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
         id: "proj-02",
         title: "Smart Lighting & AC System App",
         tags: ["Prototyping", "Figma", "Design Systems", "UI/UX"],
-        cover: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=870&h=600&fit=crop",
+        cover: "/Smart Led Bulb.jpg",
         detail: {
             problem: "Users of a smart home system found the mobile app for controlling lighting and air conditioning to be unintuitive and slow. Key features were buried in menus, leading to a frustrating user experience.",
             outcome: "A complete app redesign focusing on a task-based workflow. The new dashboard provides one-tap access to common controls, and user satisfaction scores increased by 60% after launch.",
