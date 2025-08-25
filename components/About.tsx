@@ -34,7 +34,7 @@ const About = () => {
                           4. If your image has a different name, just update the path below.
                         */}
                         <img
-                            src="public/natya.jpeg"
+                            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=870&h=870&fit=crop"
                             alt="Natya Sowparnika"
                             className="w-full h-full rounded-full object-cover border-4 border-accent/30 shadow-lg"
                         />
@@ -43,7 +43,7 @@ const About = () => {
                     {/* --- TEXT CONTENT --- */}
                     <div className="max-w-lg text-center md:text-left">
                         <p className="text-lg sm:text-xl text-secondary/80 leading-relaxed">
-                            I'm Natya, a UI/UX designer who travels to the future. I find every potential user rage-quit before it happens, then I return to build an experience that's not only frustration-proof  but also a genuine pleasure to look at ! In short i create digital experiences that don't require a user manual or deep breathing😊
+                            Design is my playground, and I show up ready to swing, slide, and build castles out of pixels. I dive into every project with curiosity, creativity, and a passion for making digital experiences not just better but unforgettable. With a background in Computer Science, I speak both design and tech fluently. This means I understand the "how" and the "why" behind every decision. What sets me apart? I bring my whole personality to the process. I’m the teammate who’ll brainstorm bold ideas, obsess over the tiniest details, tell the occasional bad joke, and keep things fun without ever losing focus. My mission is to design experiences that are beautiful, functional, and engaging while making sure that working together feels like the best part of your day.
                         </p>
                     </div>
                 </div>
