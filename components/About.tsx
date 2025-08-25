@@ -27,7 +27,7 @@ const About = () => {
                         transition={{ type: 'spring', stiffness: 300 }}
                     >
                         <img
-                            src="public/natya.PNG"
+                            src="/natya.PNG"
                             alt="Natya Sowparnika"
                             className="w-full h-full rounded-full object-cover border-4 border-accent/30 shadow-lg"
                         />
