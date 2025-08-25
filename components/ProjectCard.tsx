@@ -60,7 +60,12 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
                 <img src={project.cover} alt={project.title} className="w-full h-full object-cover rounded-t-xl" />
                 <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
             </div>
-            <div className="p-6" style={{ transform: 'translateZ(20px)' }}>
+            <motion.div
+                className="p-6"
+                style={{ transform: 'translateZ(20px)' }}
+                whileHover={{ transform: 'translateZ(40px)' }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            >
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
@@ -69,7 +74,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
                         </span>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </motion.div>
     );
 };

@@ -26,15 +26,8 @@ const About = () => {
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
                     >
-                        {/* 
-                          INSTRUCTIONS TO ADD YOUR PHOTO:
-                          1. Create a folder named 'assets' in the root directory of your project (the same level as 'index.html').
-                          2. Place your profile picture inside this 'assets' folder (e.g., 'natya.jpeg').
-                          3. The `src` attribute below is set to "/assets/natya.jpeg". The leading slash means the browser will look for the 'assets' folder from the root of the site.
-                          4. If your image has a different name, just update the path below.
-                        */}
                         <img
-                            src="public/Natya.jpg"
+                            src="/Natya.jpg"
                             alt="Natya Sowparnika"
                             className="w-full h-full rounded-full object-cover border-4 border-accent/30 shadow-lg"
                         />
@@ -43,7 +36,7 @@ const About = () => {
                     {/* --- TEXT CONTENT --- */}
                     <div className="max-w-lg text-center md:text-left">
                         <p className="text-lg sm:text-xl text-secondary/80 leading-relaxed">
-                            Design is my playground, and I show up ready to swing, slide, and build castles out of pixels. I dive into every project with curiosity, creativity, and a passion for making digital experiences not just better but unforgettable. With a background in Computer Science, I speak both design and tech fluently. This means I understand the "how" and the "why" behind every decision. What sets me apart? I bring my whole personality to the process. I’m the teammate who’ll brainstorm bold ideas, obsess over the tiniest details, tell the occasional bad joke, and keep things fun without ever losing focus. My mission is to design experiences that are beautiful, functional, and engaging while making sure that working together feels like the best part of your day.
+                            I'm Natya, a UI/UX designer who travels to the future. I find every potential user rage-quit before it happens, then I return to build an experience that's not only frustration-proof  but also a genuine pleasure to look at ! In short i create digital experiences that don't require a user manual or deep breathing😊
                         </p>
                     </div>
                 </div>

@@ -22,6 +22,8 @@ const TimelineItem = ({ item, isLast, icon }: { item: ExperienceItem; isLast: bo
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.03, transition: { type: 'spring', stiffness: 300 } }}
+            data-hoverable
         >
             <div className="absolute left-[-8px] top-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center border-4 border-primary text-accent">
                 {icon}
