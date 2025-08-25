@@ -34,7 +34,7 @@ const About = () => {
                           4. If your image has a different name, just update the path below.
                         */}
                         <img
-                            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=870&h=870&fit=crop"
+                            src="public/Natya.jpg"
                             alt="Natya Sowparnika"
                             className="w-full h-full rounded-full object-cover border-4 border-accent/30 shadow-lg"
                         />
