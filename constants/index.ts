@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
         id: "proj-01",
         title: "Anti-Aging Skin Oil Landing Page Redesign",
         tags: ["UI Design", "Figma", "UX Research", "UI/UX"],
-        cover: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=870&h=600&fit=crop",
+        cover: "/Anti-aging.jpeg",
         detail: {
             problem: "The existing landing page for the skin oil product had a low conversion rate and a high bounce rate. User feedback indicated the design was outdated and the information architecture was confusing.",
             outcome: "The redesigned landing page saw a 40% increase in user engagement and a 25% uplift in conversions. The new design is modern, clean, and effectively communicates the product's value proposition.",
