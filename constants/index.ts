@@ -42,14 +42,14 @@ export const PROJECTS: Project[] = [
         tags: ["Prototyping", "Figma", "Design Systems", "UI/UX"],
         cover: "/Smart Led Bulb.jpg",
         detail: {
-            problem: "Users of a smart home system found the mobile app for controlling lighting and air conditioning to be unintuitive and slow. Key features were buried in menus, leading to a frustrating user experience.",
-            outcome: "A complete app redesign focusing on a task-based workflow. The new dashboard provides one-tap access to common controls, and user satisfaction scores increased by 60% after launch.",
+            problem: "Employees in a large office building struggled with the mobile app meant to control lighting and air conditioning in their workspaces. The interface was slow and confusing, and essential features like adjusting room temperature or turning off lights were hidden under multiple menus. This caused daily frustration and wasted time, especially during meetings and peak work hours when quick adjustments were needed.",
+            outcome: "The app was completely redesigned with a task-first approach. The new dashboard gave employees one-tap access to the most common actions, like changing room temperature, dimming lights for presentations, or turning everything off when leaving. After the launch, employees reported a 60% increase in satisfaction scores. The facilities team also noticed fewer complaints about controls not working as expected.",
             process: [
-                 { step: 'Discover', description: "Mapped user journeys and identified critical usability issues in the existing application." },
-                 { step: 'Define', description: "Redefined the information architecture to prioritize frequently used features." },
-                 { step: 'Ideate', description: "Sketched and wireframed a new dashboard-centric user interface." },
-                 { step: 'Design', description: "Built a component-based design system and created interactive prototypes for testing." },
-                 { step: 'Validate', description: "Conducted usability testing with real users, leading to a 60% increase in satisfaction scores post-launch." }
+                 { step: 'Discover', description: "I spoke with employees in different departments about how they currently use the lighting and AC controls, what frustrates them, and what would make it better." },
+                 { step: 'Define', description: "Based on these conversations, we restructured the app’s layout to showcase the most-used features upfront instead of hiding them." },
+                 { step: 'Ideate', description: "I sketched and created wireframes for a new dashboard-centric interface, designed to be simple and fast." },
+                 { step: 'Design', description: "The team then developed a component-based design system and interactive prototypes to test with real users." },
+                 { step: 'Validate', description: "I helped run usability sessions where employees tried the new app in real office situations. Their feedback guided improvements, and the final version resulted in a 60% increase in satisfaction." }
             ],
             gallery: [],
             prototypeUrl: "https://www.figma.com/proto/iynhigsufbphklwuXTndLj/Projectss?node-id=24-2017&t=VrEIYjwODH3FEmwZ-1"
